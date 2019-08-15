@@ -33,7 +33,7 @@ default:
     print("Haftada \(bugun) gün yok malesef!!")
 }
 
-//Swift range ile belli aralıkltaki değerleri case kısmına yazabiliriz
+//Switch range ile belli aralıkltaki değerleri case kısmına yazabiliriz
 var sicaklik = 120
 
 switch sicaklik {
