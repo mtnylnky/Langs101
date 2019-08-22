@@ -28,3 +28,26 @@ class ogrenciNumarasi {
 
 let numaras = ogrenciNumarasi()
 print("Ogrenci numarası \(numaras.numara)")
+
+
+//Inheritance
+//Miras Alma
+
+//Base Class: herhangi sınıftan miras almayan classlardır
+
+class Arabalar {
+    var mevcutHiz = 0.0
+    var durum: String {
+        return "Aracın mevcut hızı : (mevcutHiz)"
+    }
+}
+	
+let arabalar = Arabalar() //Arabalar sınıfından yeni bir instance oluşturduk.
+
+//SubClass: Miras alan sınıflar
+	
+class Panelvan: Arabalar {
+    var calismadurumu = false
+}
+
+let panelvan = Panelvan() //Arabalar sınıfından miras alındı
